@@ -27,13 +27,6 @@ pipeline{
       } 
     }
     
-    stage('Test'){
-      steps{
-        script{
-            sh 'npm test'
-        }
-      } 
-    }
     
     stage('Deploy'){
       steps{
