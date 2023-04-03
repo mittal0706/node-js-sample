@@ -22,16 +22,7 @@ pipeline{
     stage('Build'){
       steps{
         script{
-            sh 'npm run'
-        }
-      } 
-    }
-    
-    
-    stage('Deploy'){
-      steps{
-        script{
-            sh 'npm run deploy'
+            sh 'npm run test'
         }
       } 
     }
